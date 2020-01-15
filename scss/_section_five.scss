@@ -1,0 +1,51 @@
+.section-five-bg { 
+    background: #EBEBEB;
+}
+.section-five { 
+    background: inherit;
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+    
+    h2 { 
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.78) !important;
+        span { 
+            color: #E20505;
+        }
+    } 
+   
+}
+.section-five-item { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px; 
+    p { 
+        color: rgba(0, 0, 0, 0.78);
+        text-align: center;
+        margin: 0;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center; 
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .section-five { 
+        h2 { 
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section-five { 
+        h2 { 
+            font-size: 25px;
+            line-height: 26px;
+        }
+    }
+}

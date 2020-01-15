@@ -1,0 +1,99 @@
+.section-two-item { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img { 
+        margin: 16px 0;
+    }
+    p { 
+        text-align: center;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 0;
+    }
+}
+
+.move-to-action { 
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5 { 
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    span { 
+        margin-top: 15px;
+        display: block;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FAD264;
+    }
+    p { 
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+.btn-container { 
+    a { 
+        display: inline-block;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        background: $yellow-main;
+        padding: 30px 50px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        border-radius: 40px;
+        text-decoration: none;
+        transition: 300ms ease;
+        box-shadow: #0000007c 0 2px 5px;
+        &:hover { 
+            color: #000000d2;
+            box-shadow: #000000c5 0 5px 20px;
+        }
+    }
+}
+.timer { 
+    font-size: 36px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    padding: 15px 20px ;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+    
+@media screen and (max-width: 400px) {
+    .btn-container { 
+        a { 
+            padding: 25px 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .main-section-two { 
+       padding: 0;
+    }  
+    .btn-container { 
+        a { 
+            white-space: nowrap;
+            padding: 20px 25px;
+            font-size: 16px;
+        }
+    }
+}
+    

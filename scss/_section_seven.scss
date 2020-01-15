@@ -1,0 +1,38 @@
+.section-seven-bg { 
+    background-image: url(../img/seven-bg.png);
+    @extend %background-prop; 
+}
+.section-seven { 
+    // padding-top: 60px;
+    h2 { 
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #4B4949;
+        span { 
+            color: #E20505;
+        }
+    }
+}
+.section-seven-text { 
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.87);
+    p { 
+        position: relative;
+        padding-left: 30px;
+        &::after { 
+            content: ' ';
+            position: absolute;
+            top: 10px;
+            left: -15px;
+            width: 28px;
+            height: 3px;
+            background: $yellow-main;
+
+        }
+    }
+}
