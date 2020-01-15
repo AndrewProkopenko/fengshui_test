@@ -9,10 +9,12 @@ let timeoutID;
 
 
 if(localStorage.getItem('timerFinishTime')){
-	UpdateTimer(); 
+    UpdateTimer(); 
+    
 }else{
-	UpdateTimerDis(timerLength);
+    UpdateTimerDis(timerLength);
 }
+ 
 
 if(localStorage.getItem('timerSavedTime')){
 	let savedTime = localStorage.getItem('timerSavedTime') * 1;
@@ -67,6 +69,8 @@ function millisToMinutesAndSeconds(millis) {
 			seconds = 0;
 		}
 		return hours + " : " + (minutes < 10 ? '0' : '') + minutes + " : " + (seconds < 10 ? '0' : '') + seconds;
+}
+if(localStorage.getItem('timerFinishTime') === null  ){
+    StartTimer()  
 } 
-
 })();
