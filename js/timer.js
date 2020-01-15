@@ -9,8 +9,7 @@ let timeoutID;
 
 
 if(localStorage.getItem('timerFinishTime')){
-	UpdateTimer();
-	start.innerHTML = timerPauseButtonLabel;
+	UpdateTimer(); 
 }else{
 	UpdateTimerDis(timerLength);
 }
@@ -42,8 +41,7 @@ function UpdateTimerDis(millis) {
 	}
 }
 
-function StartTimer() {
-	start.innerHTML = timerPauseButtonLabel;
+function StartTimer() { 
 	
 	if(localStorage.getItem('timerSavedTime')){
 		savedTime = localStorage.getItem('timerSavedTime') * 1;
@@ -56,7 +54,7 @@ function StartTimer() {
 	localStorage.setItem('timerFinishTime', ((new Date()).getTime() + savedTime));
 	if (timeoutID != undefined) window.clearTimeout(timeoutID);
 	UpdateTimer();
-}
+} 
 
 function millisToMinutesAndSeconds(millis) {
 		let hours = Math.floor(millis / 3600000);
